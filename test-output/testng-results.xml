@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="0" total="2" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="softwaretestingmaterial" duration-ms="773" started-at="2018-12-20T15:28:21Z" finished-at="2018-12-20T15:28:22Z">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:Runner.AppTest@54e1c68b]" name="runScenario" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:Runner.AppTest2@4d1bf319]" name="runScenario" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="testngTest2" duration-ms="749" started-at="2018-12-20T15:28:21Z" finished-at="2018-12-20T15:28:22Z">
+      <class name="Runner.AppTest2">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:Runner.AppTest2@4d1bf319]" name="setUpClass" is-config="true" duration-ms="204" started-at="2018-12-20T15:28:21Z" finished-at="2018-12-20T15:28:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:Runner.AppTest2@4d1bf319]" name="runScenario" duration-ms="426" started-at="2018-12-20T15:28:21Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2018-12-20T15:28:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Demo scenario2"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["running test on testng"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:Runner.AppTest2@4d1bf319]" name="tearDownClass" is-config="true" duration-ms="4" started-at="2018-12-20T15:28:22Z" finished-at="2018-12-20T15:28:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- Runner.AppTest2 -->
+    </test> <!-- testngTest2 -->
+    <test name="testngTest" duration-ms="773" started-at="2018-12-20T15:28:21Z" finished-at="2018-12-20T15:28:22Z">
+      <class name="Runner.AppTest">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:Runner.AppTest@54e1c68b]" name="setUpClass" is-config="true" duration-ms="204" started-at="2018-12-20T15:28:21Z" finished-at="2018-12-20T15:28:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="FAIL" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:Runner.AppTest@54e1c68b]" name="runScenario" duration-ms="442" started-at="2018-12-20T15:28:21Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2018-12-20T15:28:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Demo scenario"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["running test on testng"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.json.JsonException">
+            <message>
+              <![CDATA[Unable to determine type from: E. Last 1 characters read: E
+Build info: version: '3.141.5', revision: 'd54ebd709a', time: '2018-11-06T11:42:16'
+System info: host: 'DESKTOP-MHEKL4H', ip: '192.168.2.14', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+Driver info: driver.version: RemoteWebDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.json.JsonException: Unable to determine type from: E. Last 1 characters read: E
+Build info: version: '3.141.5', revision: 'd54ebd709a', time: '2018-11-06T11:42:16'
+System info: host: 'DESKTOP-MHEKL4H', ip: '192.168.2.14', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+Driver info: driver.version: RemoteWebDriver
+at org.openqa.selenium.json.JsonInput.peek(JsonInput.java:122)
+at org.openqa.selenium.json.JsonTypeCoercer.lambda$null$6(JsonTypeCoercer.java:140)
+at org.openqa.selenium.json.JsonTypeCoercer.coerce(JsonTypeCoercer.java:126)
+at org.openqa.selenium.json.Json.toType(Json.java:69)
+at org.openqa.selenium.json.Json.toType(Json.java:55)
+at org.openqa.selenium.json.Json.toType(Json.java:50)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:87)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+at StepDef.StepDefination.open_Browser(StepDefination.java:20)
+at ✽.open Browser(Features/DemoFeature.feature:5)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.json.JsonException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:Runner.AppTest@54e1c68b]" name="tearDownClass" is-config="true" duration-ms="12" started-at="2018-12-20T15:28:22Z" finished-at="2018-12-20T15:28:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- Runner.AppTest -->
+    </test> <!-- testngTest -->
+  </suite> <!-- softwaretestingmaterial -->
+</testng-results>
