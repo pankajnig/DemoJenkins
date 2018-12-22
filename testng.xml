@@ -5,6 +5,7 @@
 		<classes>
 			<class name="Runner.AppTest" />
 		</classes>
+		<!--mbm-->
 	</test>
 	
 </suite>
