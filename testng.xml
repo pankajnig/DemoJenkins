@@ -6,10 +6,5 @@
 			<class name="Runner.AppTest" />
 		</classes>
 	</test>
-	<test name="testngTest2">
-	<parameter name="Browser" value="ie" />
-		<classes>
-			<class name="Runner.AppTest2" />
-		</classes>
-	</test>
+	
 </suite>
